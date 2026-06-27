@@ -586,7 +586,7 @@ padding:20px;
       Fluid.utils.createCssLink('https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css')
       import('https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js').then(({ init }) => {
         var options = Object.assign(
-          {"serverURL":"https://comment-two-alpha.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
+          {"serverURL":"https://comment-two-alpha.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":[],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"locale":{"nick":"昵称(空栏为匿名)","sofa":"欢迎留下宝贵的评论！请勿发布与本文章无关的内容。","placeholder":"留下你的感想吧！请友善对待自己和他人，维护友善的评论氛围~"}},
           {
             el: '#waline',
             path: window.location.pathname
